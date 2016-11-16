@@ -1,9 +1,84 @@
-/** 
+/**
 * Anax Flat theme.
 */
 @import url(modules.less);
 
 
+
+/** --------------------------------------------------------------
+ *  BODY
+ */
+
+.route- {
+    background-color: mintcream;
+}
+
+.main a {
+    color: #333;
+}
+
+/** --------------------------------------------------------------
+ *  Header
+ */
+ .site-header {
+     height: 80px;
+     background-color: #333;
+ }
+
+.site-logo-text,
+.navbar2,
+.profile {
+    float: left;
+    width: 30%;
+}
+
+.site-logo-text {
+    font-size: 2em;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+
+.toc li a {
+    color: #333;
+}
+
+
+.breadcrumb-wrap li a {
+    color: #333;
+}
+//FOOTER
+.footer-column {
+    background-color: #333;
+}
+
+
+.footer {
+    background-color: #333;
+    width: 100%;
+}
+
+.footer a {
+    color: whitesmoke;
+}
+
+//NAVBAR MAIN
+.rm-desktop li {
+    background-color: #333;
+}
+
+.rm-desktop li a {
+    color: whitesmoke;
+}
+
+//NAVBAR MAX
+.rm-max .rm-small .rm-button {
+    font-size: 1.5em;
+    color: whitesmoke;
+}
 
 /** --------------------------------------------------------------
  *  Logo images
@@ -17,5 +92,49 @@
 .site-logo-text-icon {
     img {
         vertical-align: bottom;
+
     }
+}
+
+/** --------------------------------------------------------------
+ *  RESPONSIVE HEADER
+ */
+ img {
+     max-width: 100%;
+ }
+ @media screen and (max-width: 900px) {
+    .site-logo-text {
+        width: 40%;
+    }
+
+    .navbar2 {
+        width: 50%;
+    }
+
+    .profile {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .sidebar {
+       width: 100%;
+   }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-column {
+       width: 100%;
+   }
+}
+
+
+@media screen and (max-width: 560px) {
+    .site-logo-text {
+       width: 70%;
+   }
+
+   .navbar2 {
+       display: none;
+   }
 }
