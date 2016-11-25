@@ -1,0 +1,133 @@
+
+/** --------------------------------------------------------------
+ *  BODY
+ */
+@import url(style.less);
+
+@backgroundbody: mintcream;
+@route-:mintcream;
+@maina: #333;
+@site-header: #333;
+@toclia:#333;
+@breadcrumb-wraplia:#333;
+@footer-column:#333;
+@footer: #333;
+@footera: whitesmoke;
+@rm-desktopli:#333;
+@rm-desktoplia: whitesmoke;
+@rm-maxrm-smallrm-button: whitesmoke;
+@paragraph: black;
+@borderbottom:gainsboro;
+@bordertop: gainsboro;
+@footer-columnh4: whitesmoke;
+@sitefooterp: whitesmoke;
+@paragraph2: whitesmoke;
+@navbarItemHoverColor:gray;
+@selectednavbar: MEDIUMAQUAMARINE !important;
+@li:black;
+
+ body {
+     background: @backgroundbody;
+ }
+
+.route- {
+    background-color: @route-;
+}
+
+.main a {
+    color: @maina;
+}
+
+p,
+pre {
+    color: @paragraph;
+}
+
+
+.inner-wrap-main {
+    background-color: @route-;
+}
+
+.site-footer p {
+    color: @sitefooterp;
+}
+
+.footer-column-x h4 {
+    color: @footer-columnh4;
+}
+
+.footer-column-x p {
+    color: @footer-columnh4;
+}
+
+.fieldset {
+    color: @paragraph2;
+}
+
+.selected {
+    background-color: @selectednavbar;
+    border-radius: 10px;
+}
+
+li {
+    color: @li;
+}
+
+
+
+
+/** --------------------------------------------------------------
+ *  Header
+ */
+ .outer-wrap-header {
+     background-color: @site-header;
+     border-bottom: 2px solid @borderbottom;
+ }
+ .site-header {
+     background-color: @site-header;
+     //width: 100%;
+ }
+
+
+
+
+
+ .toc li a {
+     color: @toclia;
+ }
+
+
+ .breadcrumb-wrap li a {
+     color: @breadcrumb-wraplia;
+ }
+ //FOOTER
+ .footer-column {
+     background-color: @footer-column;
+ }
+
+ .outer-wrap-footer {
+     background-color: @footer-column;
+     border-top: 2px solid @bordertop;
+ }
+ .footer {
+     background-color: @footer;
+     //width: 100%;
+ }
+
+ .footer a {
+     color: @footera;
+ }
+
+ //NAVBAR MAIN
+ .rm-desktop li {
+     background-color: @rm-desktopli;
+ }
+
+ .rm-desktop li a {
+     color: @rm-desktoplia;
+ }
+
+ //NAVBAR MAX
+ .rm-max .rm-small .rm-button {
+     color: @rm-maxrm-smallrm-button;
+ }

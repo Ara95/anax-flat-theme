@@ -440,11 +440,42 @@ template {
  * Pull a column right @offset columns.
  */
 /**
+ * Show grid.
+ */
+/**
  * Regions, basics to show off the regions.
  */
 .wrap-all {
-  max-width: 100%;
-  background-color: whitesmoke;
+  background: url("../img/grid/grid940x12x60x20-nomargin.png") repeat-y fixed center center;
+  background-size: 100% auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+@media (min-width: 1200px) {
+  .wrap-all {
+    background-size: 1200px auto;
+  }
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -1.04166667%;
+  margin-right: -1.04166667%;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.site-header,
+.flash-wrap,
+.main,
+.footer {
+  flex: 0 0 auto;
+  width: 97.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
 }
 .footer-column {
   float: left;
@@ -454,7 +485,7 @@ template {
   overflow: auto;
 }
 .sidebar {
-  width: 33%;
+  width: 20%;
   float: left;
 }
 .main .has-sidebar {
@@ -489,22 +520,58 @@ template {
   float: right;
   text-align: left;
 }
-.breadcrumb {
-  margin-bottom: 22px;
+@media screen and (max-width: 800px) {
+  .site-logo-text {
+    flex: 0 0 auto;
+    width: 131.25%;
+    margin-left: 1.04166667%;
+    margin-right: 1.04166667%;
+  }
+  .navbar2 {
+    display: none;
+  }
+  .profile {
+    flex: 0 0 auto;
+    width: 64.58333333%;
+    margin-left: 1.04166667%;
+    margin-right: 1.04166667%;
+  }
 }
-.breadcrumb ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.main {
+  flex: 0 0 auto;
+  width: 56.25%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+  margin-left: 17.70833333%;
 }
-.breadcrumb li {
-  display: inline;
+.main.has-sidebar-left {
+  flex: 0 0 auto;
+  width: 56.25%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+  margin-left: 9.375%;
 }
-.breadcrumb li::after {
-  content: " » ";
+.main.has-sidebar-right {
+  flex: 0 0 auto;
+  width: 56.25%;
+  margin-right: 1.04166667%;
+  margin-left: 1.04166667%;
 }
-.site-header {
-  position: relative;
+.main.has-sidebar-left.has-sidebar-right {
+  flex: 0 0 auto;
+  width: 64.58333333%;
+  margin-right: 1.04166667%;
+  margin-left: 1.04166667%;
+}
+.sidebar-right,
+.sidebar-left {
+  flex: 0 0 auto;
+  width: 31.25%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.sidebar-right {
+  margin-left: 9.375%;
 }
 /**
  * Style for responsive menu
@@ -736,6 +803,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /** --------------------------------------------------------------
  *  BODY
  */
+body {
+  background: mintcream;
+}
 .route- {
   background-color: mintcream;
 }
@@ -772,7 +842,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .footer {
   background-color: #333;
-  width: 100%;
 }
 .footer a {
   color: whitesmoke;
