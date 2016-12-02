@@ -5,7 +5,7 @@
 @import url(style.less);
 
 @backgroundbody: mintcream;
-@route-:mintcream;
+@route-:#333;
 @maina: #333;
 @site-header: #333;
 @toclia:#333;
@@ -25,6 +25,8 @@
 @navbarItemHoverColor:gray;
 @selectednavbar: MEDIUMAQUAMARINE !important;
 @li:black;
+@wrapall: mintcream;
+@h1 :black;
 
  body {
      background: @backgroundbody;
@@ -37,15 +39,19 @@
 .main a {
     color: @maina;
 }
+p {
+    color: @paragraph;
+}
 
-p,
 pre {
     color: @paragraph;
 }
 
-
+h1 {
+    color:@h1;
+}
 .inner-wrap-main {
-    background-color: @route-;
+    background-color: @backgroundbody;
 }
 
 .site-footer p {
@@ -73,9 +79,22 @@ li {
     color: @li;
 }
 
+.outer-wrap-flash {
+    background-color: @backgroundbody;
+}
+
+.outer-wrap {
+    background-color: @backgroundbody;
+}
 
 
+.wrap-all {
+    background-color: @wrapall;
+}
 
+.outer-wrap-main {
+    background: @backgroundbody;
+}
 /** --------------------------------------------------------------
  *  Header
  */

@@ -12,7 +12,7 @@
  */
 .typographyHeadings() {
     h1, h2, h3, h4, h5, h6 {
-        font-family: @fontFamilyHeadings;
+        font-family: @fontFamilyHeadings !important;
         margin-top: @magicNumber;
         margin-bottom: @magicNumber;
         img {
@@ -97,7 +97,7 @@
     small,
     .small,
     .smaller {
-        font-size: @fontSizeSmall; 
+        font-size: @fontSizeSmall;
     }
 
     strong,
@@ -217,13 +217,13 @@
 .typographyListElements() {
     //ul,ol{margin:0.6875em 1.5em 1.375em 0;padding-left:1.5em;}
 
-    ul, 
+    ul,
     ol {
         margin-top:    @magicNumber;
         margin-bottom: @magicNumber;
         padding-left: 1.5em;
 
-        p { 
+        p {
             margin-top:    @magicNumber / 2;
             margin-bottom: @magicNumber / 2;
         }
@@ -254,20 +254,20 @@
                 clear: left;
                 float: left;
                 width: @margin
-            } 
+            }
 
             dd {
                 margin-left: @margin + 1em;
                 display:block;
-            } 
+            }
         }
     }
 
-    dt { 
+    dt {
         //font-weight: bold;
     }
 
-    dd { 
+    dd {
         margin-left: 1.5em;
     }
 }
@@ -293,7 +293,7 @@
 
     }
 
-    article table, 
+    article table,
     .table,
     .table1,
     .table2 {
@@ -311,16 +311,16 @@
     // A more styled table layout
     article table,
     .table,
-    .table2 { 
+    .table2 {
         border-collapse: collapse;
 
-        caption { 
+        caption {
             .fontSize(@fontSizeSmall);
             text-align: left;
             font-style: italic;
         }
 
-        thead { 
+        thead {
             box-shadow:  0 1px 0 @colorTableHeaderBorder;
         }
 
@@ -346,7 +346,7 @@
         }
 
         tfoot {
-            
+
         }
     }
 
@@ -375,7 +375,7 @@
         border: 0;
         height: 1px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
- 
+
         margin-top: 1.5 * @magicNumber - 1px;
         margin-bottom: 1.5 * @magicNumber;
 
