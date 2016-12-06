@@ -1,0 +1,103 @@
+@import url(default.less);
+//@import url(style.less);
+
+
+
+
+/** --------------------------------------------------------------
+ *  Header
+ */
+ .site-header {
+     height: 80px;
+     text-align: center;
+ }
+
+.site-logo-text {
+    float: left;
+}
+
+.navbar2 {
+    float:none;
+}
+
+.profile {
+    display:none;
+}
+
+.site-logo-text {
+    font-size: 2em;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.selected {
+    border-radius: 10px;
+}
+
+h1 {
+text-shadow: 0 3px 3px black;
+}
+
+h2 {
+text-shadow: 0 3px 3px black;
+}
+
+h3 {
+text-shadow: 0 3px 3px black;
+}
+
+img {
+    box-shadow: 6px 6px 3px gray;
+}
+
+//NAVBAR MAX
+.rm-max .rm-small .rm-button {
+    font-size: 1.5em;
+}
+
+/** --------------------------------------------------------------
+ *  Logo images
+ */
+.logo-1 {
+    position: absolute;
+    top: 70px;
+    left: -140px;
+}
+
+.site-logo-text-icon {
+    img {
+        vertical-align: bottom;
+
+    }
+}
+
+/** --------------------------------------------------------------
+ *  RESPONSIVE HEADER
+ */
+ img {
+     max-width: 100%;
+ }
+
+ @media screen and (max-width: 900px) {
+     .navbar2 {
+         display: none;
+     }
+
+     .profile {
+         display: block;
+     }
+ }
+
+@media screen and (max-width: 750px) {
+    .sidebar {
+       width: 100%;
+   }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-column {
+       width: 100%;
+   }
+}
