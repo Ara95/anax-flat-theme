@@ -2,7 +2,7 @@
  * Regions, basics to show off the regions.
  */
 
- 
+
  .route-typography .inner-wrap {
      .showTypography();
  }
@@ -35,6 +35,19 @@
     margin-top: @magicNumber;
 }
 
+html.vgrid .inner-wrap {
+    @gridImage: "../img/theme/vertical-grid/grid950x24x30x10-nomargin.png";
+    .showGrid(1200px);
+
+    &.inner-wrap-header {
+        .showGrid(100%);
+    }
+}
+
+html.hgrid .inner-wrap {
+    @gridImage: "../img/theme/typographic-grid/magic-number-24.png";
+    .showGrid(@gridImage);
+}
 
 //footer
 .footer-column {
